@@ -1,2 +1,8 @@
 # Idle Heroes Summoning Simulator
-This simulator is meant to accurately simulate hero, skin, and artifact summons from the mobile game, Idle Heroes.
+  This simulator is meant to accurately simulate hero, skin, and artifact summons from the mobile game, Idle Heroes. This simulator was made so you can try your luck on here without spending a penny in game to see if you actually have a chance at getting something you want. This simulator can help you determine if something you are going after is worth going after and investing in so you don't break the bank trying to gamble your way up to something and either not get it, or get it after a multitude of resources have been used.
+
+All summon rates and chances used in this simulator can be found in various places in Idle Heroes. If something has a chance of being summoned or drawn, there is most likely a small 'i' icon or a small magnifying glass icon somewhere nearby that thing in game. The Summon Circle has an 'i' in the top right of its menu and hero shards, skin shards, and artifact fragments have a little magnifying glass when you click on them in the bag.
+
+If you encounter any bugs, errors, glitches, or any simulator breaking occurrences, please contact me at the provided email above. I want this simulator to be as usable, reliable, and accurate as possible. If you have any suggestions or feedback, please contact me! I want to hear from you guys what I can do to make this simulator better!
+
+I would like to thank you guys so much for your support on this project! You guys, the Idle Heroes community, are the best out there and I hope this simulator makes you guys as happy as you guys and your support make me! So far I have received a lot of feedback and suggestions, lots that I have implemented in this first beta, and I can not wait to continue updating this simulator to continue bringing you guys more content and things to try out!
