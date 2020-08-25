@@ -1,3 +1,6 @@
+# HOW TO USE
+Because of the way unknowned sourced .exe files are handled, Windows Defender, Norton, McAfee, or any other antivirus may try to warn you that IdleHeroesSummoningSimulator.exe is a potential virus. Tell your computer to allow it to run this program. IdleHeroesSummoningSimulator.exe contains no malicious code or programming that would otherwise harm your PC. The intent of this program is to help the Idle Heroes gaming community predict what the odds of obtaining something in game is. I would not want to hurt or harm my fellow users and community members.
+
 # Idle Heroes Summoning Simulator
 This simulator is meant to accurately simulate hero, skin, and artifact summons from the mobile game, Idle Heroes. This simulator was made so you can try your luck on here without spending a penny in game to see if you actually have a chance at getting something you want. This simulator can help you determine if something you are going after is worth going after and investing in so you don't break the bank trying to gamble your way up to something and either not get it, or get it after a multitude of resources have been used.
 
