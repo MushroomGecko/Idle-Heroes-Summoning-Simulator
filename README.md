@@ -21,23 +21,43 @@ Idle Heroes is a free to play idle game on iOS and Android made by DHGames. All 
 
 # Updates in Beta 1.0 (From Reddit Pre-Dev Updates)
 Added non-event Heroic Summon simulation
+
 Added skin shard simulation
+
 Added regular 5-star hero shard simulation
+
 Added 5-star forest hero shard simulation
+
 Added 5-star fortress hero shard simulation
+
 Added 5-star abyss hero shard simulation
+
 Added 5-star shadow hero shard simulation
+
 Added 5-star dark hero shard simulation
+
 Added 5-star light hero shard simulation
+
 Added regular elite hero shard simulation
+
 Added dark elite hero shard simulation
+
 Added light elite hero shard simulation
+
 Added a bag based on all heroes drawn
+
 Added a bag based on hero star types drawn
+
 Added a bag based on all skins drawn
+
 Added a bag based on all artifacts drawn
+
 Added a bag based on artifact types drawn
+
 Added an info tab
+
 Added an exit button
+
 Optimized run time
+
 Optimized UI
