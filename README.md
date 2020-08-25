@@ -8,16 +8,16 @@ If you encounter any bugs, errors, glitches, or any simulator breaking occurrenc
 I would like to thank you guys so much for your support on this project! You guys, the Idle Heroes community, are the best out there and I hope this simulator makes you guys as happy as you guys and your support make me! So far I have received a lot of feedback and suggestions, lots that I have implemented in this first beta, and I can not wait to continue updating this simulator to continue bringing you guys more content and things to try out!
 
 # Info
-Simulator Version: Beta 1.0
+Version: Beta 1.0
 
-Idle Heroes Version: 1.23.14 on Android - 1.30.14 on iOS
-
-Simulator Creator: u/MushroomGecko on Reddit
+Creator: u/MushroomGecko on Reddit
 
 Contact: mushroomgecko@gmail.com
 
+Licence: 
+
 # Notice
-Idle Heroes is a free to play idle game on iOS and Android made by DHGames. All hero names, artifact names, skin names, and draw rates used in this simulator originate from Idle Heroes.
+Idle Heroes is a free to play idle game on iOS and Android made by DHGames. All hero names, artifact names, skin names, and draw rates used in this simulator originate from Idle Heroes. This simulator is up to date with Idle Heroes version 1.23.14 on Android and version 1.30.14 on iOS.
 
 # Updates in Beta 1.0 (From Reddit Pre-Dev Updates)
 Added non-event Heroic Summon simulation
