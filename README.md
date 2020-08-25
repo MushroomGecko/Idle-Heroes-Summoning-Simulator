@@ -30,6 +30,12 @@ Added non-event Heroic Summon simulation
 
 Added skin shard simulation
 
+Added orange artifact fragment simulation
+
+Added exclusive orange artifact fragment simulation
+
+Added deluxe artifact chest (comeback radio chest) simulation
+
 Added regular 5-star hero shard simulation
 
 Added 5-star forest hero shard simulation
