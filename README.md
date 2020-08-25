@@ -1,3 +1,6 @@
+# IMPORTANT NOTICE
+This simulator will not work on Mac OS or Linux without the use of a third party application that allows those operating systems to run Windows based .exe files.
+
 # HOW TO USE
 Because of the way unknowned sourced .exe files are handled, Windows Defender, Norton, McAfee, or any other antivirus may try to warn you that IdleHeroesSummoningSimulator.exe is a potential virus. Tell your computer to allow it to run this program. IdleHeroesSummoningSimulator.exe contains no malicious code or programming that would otherwise harm your PC. The intent of this program is to help the Idle Heroes gaming community predict what the odds of obtaining something in game is. I would not want to hurt or harm my fellow users and community members.
 
