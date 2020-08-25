@@ -14,7 +14,7 @@ Creator: u/MushroomGecko on Reddit
 
 Contact: mushroomgecko@gmail.com
 
-Licence: 
+Licence: GNU General Public License v3.0
 
 # Notice
 Idle Heroes is a free to play idle game on iOS and Android made by DHGames. All hero names, artifact names, skin names, and draw rates used in this simulator originate from Idle Heroes. This simulator is up to date with Idle Heroes version 1.23.14 on Android and version 1.30.14 on iOS.
