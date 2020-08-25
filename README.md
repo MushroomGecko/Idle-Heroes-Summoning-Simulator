@@ -9,8 +9,11 @@ I would like to thank you guys so much for your support on this project! You guy
 
 # Info
 Simulator Version: Beta 1.0
+
 Idle Heroes Version: 1.23.14 on Android - 1.30.14 on iOS
+
 Simulator Creator: u/MushroomGecko on Reddit
+
 Contact: mushroomgecko@gmail.com
 
 # Notice
