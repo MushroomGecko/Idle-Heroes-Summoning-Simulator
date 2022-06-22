@@ -23,6 +23,9 @@ Idle Heroes is a free to play idle game on iOS and Android made by DHGames. All 
 I am rewriting this project from the ground up to allow for a faster and more efficient update process with each update. I abandoned the project a while back because of how difficult it was to keep up and change summon rates for every update. The changes I made here should allow for a MUCH easier update process. Because I am rewriting this from the ground up, I need to re-add everything previously in the project and it is currently missing some features. This version is temporarily missing a bag to keep track of your summons, shard summons, artifact summons, and skin summons. However, have no fear! I have added a few things for you this update.
 
 > Added Flora, inosuke, Morax, Eloise, Fiona, Gloria, Andrea, Phorcys, Tussilago, Waldeck, Onkirimaru, Saja, Xiahou, Annabelle, Natasha, Eos, Holmes Young, Freya, and Mockman to the hero pool.
+
 > Added Basic Summoning
+
 > Added Friendship Summoning
+
 > Added Compass of Transcendence Summoning (both Fate and Guidance)
