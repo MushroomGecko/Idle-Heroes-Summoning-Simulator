@@ -367,6 +367,11 @@ public class HeroSummon {
 		System.out.println(compassTotalDraws);
 	}
 	
+	
+	/*
+	 * Responsible for determining what is randomly selected
+	 */
+	
 	public static int distribution(double items[])
 	{
 		// Compute the total weight of all items together
@@ -389,6 +394,11 @@ public class HeroSummon {
 		}
 		return randomIndex;
 	};
+	
+	
+	/*
+	 * Color the text of hero names based on how they appear in game chat
+	 */
 	
 	public void printWithColor(int index)
 	{
@@ -446,6 +456,11 @@ public class HeroSummon {
 	    }
 	}
 	
+	
+	/*
+	 * Basic summon
+	 */
+	
 	public void basicSummon(int draws)
 	{
 		overallOneStar = 4.67;
@@ -486,6 +501,11 @@ public class HeroSummon {
 		resetRates();
 	}
 	
+	
+	/*
+	 * Friendship summon
+	 */
+	
 	public void friendshipSummon(int draws)
 	{
 		overallTwoStar = 2;
@@ -521,6 +541,11 @@ public class HeroSummon {
 		}
 		resetRates();
 	}
+	
+	
+	/*
+	 * Heroic summons
+	 */
 	
 	public void heroicSummonEvent(int draws)
 	{
@@ -618,7 +643,6 @@ public class HeroSummon {
 		overallFiveStarEliteLD = 0.005;
 		
 		
-		
 		threeStar = overallThreeStar;
 		threeStarLD = overallThreeStarLD;
 			
@@ -654,6 +678,11 @@ public class HeroSummon {
 		}
 		resetRates();
 	}
+	
+	
+	/*
+	 * Prophet summons
+	 */
 	
 	public void prophetSummonFst(int draws)
 	{		
@@ -754,6 +783,357 @@ public class HeroSummon {
 		}
 		resetRates();
 	}
+	
+	
+	/*
+	 * Three star shards
+	 */
+	
+	public void threeStarShardSummon(int draws)
+	{	
+		threeStar = 4.8;
+		threeStarLD = 2;
+
+		int index = 0;
+			
+		for(int i = 0; i < draws; i++)
+		{
+			index = distribution(getRates());
+			printWithColor(index);
+		}
+		resetRates();
+	}
+	
+	/*
+	 * Four star shards
+	 */
+	
+	public void fourStarShardSummon(int draws)
+	{	
+		overallFourStar = 3.0625;
+		overallFourStarLD = 0.333;
+		
+		fourStarFst = overallFourStar;
+		fourStarAby = overallFourStar;
+		fourStarFrt = overallFourStar;
+		fourStarShd = overallFourStar;
+		
+		fourStarL = overallFourStarLD;
+		fourStarD = overallFourStarLD;
+
+		int index = 0;
+			
+		for(int i = 0; i < draws; i++)
+		{
+			index = distribution(getRates());
+			printWithColor(index);
+		}
+		resetRates();
+	}
+	
+	public void fourStarShardSummonFst(int draws)
+	{	
+		fourStarFst = 12.5;
+
+		int index = 0;
+			
+		for(int i = 0; i < draws; i++)
+		{
+			index = distribution(getRates());
+			printWithColor(index);
+		}
+		resetRates();
+	}
+	
+	public void fourStarShardSummonAby(int draws)
+	{	
+		fourStarAby = 12.5;
+
+		int index = 0;
+			
+		for(int i = 0; i < draws; i++)
+		{
+			index = distribution(getRates());
+			printWithColor(index);
+		}
+		resetRates();
+	}
+	
+	public void fourStarShardSummonFrt(int draws)
+	{	
+		fourStarFrt = 12.5;
+
+		int index = 0;
+			
+		for(int i = 0; i < draws; i++)
+		{
+			index = distribution(getRates());
+			printWithColor(index);
+		}
+		resetRates();
+	}
+	
+	public void fourStarShardSummonShd(int draws)
+	{	
+		fourStarShd = 12.5;
+
+		int index = 0;
+			
+		for(int i = 0; i < draws; i++)
+		{
+			index = distribution(getRates());
+			printWithColor(index);
+		}
+		resetRates();
+	}
+	
+	public void fourStarShardSummonL(int draws)
+	{	
+		fourStarL = 33.3;
+
+		int index = 0;
+			
+		for(int i = 0; i < draws; i++)
+		{
+			index = distribution(getRates());
+			printWithColor(index);
+		}
+		resetRates();
+	}
+	
+	public void fourStarShardSummonD(int draws)
+	{	
+		fourStarD = 33.3;
+
+		int index = 0;
+			
+		for(int i = 0; i < draws; i++)
+		{
+			index = distribution(getRates());
+			printWithColor(index);
+		}
+		resetRates();
+	}
+	
+	/*
+	 * 5 star shards
+	 */
+	
+	public void fiveStarShardSummon(int draws)
+	{	
+		overallFiveStar = 2.94;
+		
+		fiveStarFst = overallFiveStar;
+		fiveStarAby = overallFiveStar;
+		fiveStarFrt = overallFiveStar;
+		fiveStarShd = overallFiveStar;
+		
+		double fiveStarList[] = getRates();
+		
+		fiveStarList[findIndex("Valkyrie", 5)] = overallFiveStar;
+		fiveStarList[findIndex("Starlight", 5)] = overallFiveStar;
+		fiveStarList[findIndex("Ormus", 5)] = overallFiveStar;
+		fiveStarList[findIndex("Aidan", 5)] = overallFiveStar;
+
+		int index = 0;
+			
+		for(int i = 0; i < draws; i++)
+		{
+			index = distribution(fiveStarList);
+			printWithColor(index);
+		}
+		resetRates();
+	}
+	
+	public void fiveStarShardSummonFst(int draws)
+	{	
+		fiveStarFst = 11.1;
+		
+		double fiveStarFstList[] = getRates();
+		
+		fiveStarFstList[findIndex("Valkyrie", 5)] = fiveStarFst;
+		fiveStarFstList[findIndex("Starlight", 5)] = fiveStarFst;
+		
+
+		int index = 0;
+			
+		for(int i = 0; i < draws; i++)
+		{
+			index = distribution(fiveStarFstList);
+			printWithColor(index);
+		}
+		resetRates();
+	}
+	
+	public void fiveStarShardSummonAby(int draws)
+	{	
+		fiveStarAby = 12.5;
+		
+		double fiveStarAbyList[] = getRates();
+
+		int index = 0;
+			
+		for(int i = 0; i < draws; i++)
+		{
+			index = distribution(fiveStarAbyList);
+			printWithColor(index);
+		}
+		resetRates();
+	}
+	
+	public void fiveStarShardSummonFrt(int draws)
+	{	
+		fiveStarFrt = 11.1;
+		
+		double fiveStarFrtList[] = getRates();
+		
+		fiveStarFrtList[findIndex("Ormus", 5)] = fiveStarFrt;
+		
+		int index = 0;
+			
+		for(int i = 0; i < draws; i++)
+		{
+			index = distribution(fiveStarFrtList);
+			printWithColor(index);
+		}
+		resetRates();
+	}
+	
+	public void fiveStarShardSummonShd(int draws)
+	{	
+		fiveStarShd = 12.5;
+		
+		double fiveStarShdList[] = getRates();
+		
+		fiveStarShdList[findIndex("Aidan", 5)] = overallFiveStar;
+
+		int index = 0;
+			
+		for(int i = 0; i < draws; i++)
+		{
+			index = distribution(fiveStarShdList);
+			printWithColor(index);
+		}
+		resetRates();
+	}
+	
+	public void fiveStarShardSummonL(int draws)
+	{	
+		fiveStarL = 33.3;
+		
+
+		int index = 0;
+			
+		for(int i = 0; i < draws; i++)
+		{
+			index = distribution(getRates());
+			printWithColor(index);
+		}
+		resetRates();
+	}
+	
+	public void fiveStarShardSummonD(int draws)
+	{	
+		fiveStarD = 33.3;
+		
+
+		int index = 0;
+			
+		for(int i = 0; i < draws; i++)
+		{
+			index = distribution(getRates());
+			printWithColor(index);
+		}
+		resetRates();
+	}
+	
+	public void fiveStarEliteShardSummon(int draws)
+	{	
+		overallFiveStarElite = 0.834;
+		
+		fiveStarEliteFst = overallFiveStarElite;
+		fiveStarEliteAby = overallFiveStarElite;
+		fiveStarEliteFrt = overallFiveStarElite;
+		fiveStarEliteShd = overallFiveStarElite;
+		
+		double eliteList[] = getRates();
+		
+		double lowerRates = 4.375;
+		eliteList[findIndex("King Barton", 5)] = lowerRates;
+		eliteList[findIndex("Kamath", 5)] = lowerRates;
+		eliteList[findIndex("Skerei", 5)] = lowerRates;
+		eliteList[findIndex("Corpsedemon", 5)] = lowerRates;
+		eliteList[findIndex("Vesa", 5)] = lowerRates;
+		eliteList[findIndex("Sigmund", 5)] = lowerRates;
+		eliteList[findIndex("Valentino", 5)] = lowerRates;
+		eliteList[findIndex("Oberon", 5)] = lowerRates;
+		
+		double upperRates = 5.625;
+		eliteList[findIndex("Garuda", 5)] = upperRates;
+		eliteList[findIndex("Heart Watcher", 5)] = upperRates;
+		eliteList[findIndex("Penny", 5)] = upperRates;
+		eliteList[findIndex("Horus", 5)] = upperRates;
+		eliteList[findIndex("Kroos", 5)] = upperRates;
+		eliteList[findIndex("Jahra", 5)] = upperRates;
+		eliteList[findIndex("Cthugha", 5)] = upperRates;
+		eliteList[findIndex("Xia", 5)] = upperRates;
+		
+		double none = 0;
+		eliteList[findIndex("Valkyrie", 5)] = none;
+		eliteList[findIndex("Starlight", 5)] = none;
+		eliteList[findIndex("Ormus", 5)] = none;
+		eliteList[findIndex("Aidan", 5)] = none;
+
+		int index = 0;
+			
+		for(int i = 0; i < draws; i++)
+		{
+			index = distribution(eliteList);
+			printWithColor(index);
+		}
+		resetRates();
+	}
+	
+	public void fiveStarEliteShardSummonL(int draws)
+	{	
+		fiveStarEliteL = 6.67;
+		
+		double eliteListL[] = getRates();
+		
+		double upperRates = 30;
+		eliteListL[findIndex("Belrain", 5)] = upperRates;
+		eliteListL[findIndex("Faith Blade", 5)] = upperRates;
+
+		int index = 0;
+			
+		for(int i = 0; i < draws; i++)
+		{
+			index = distribution(eliteListL);
+			printWithColor(index);
+		}
+		resetRates();
+	}
+	
+	public void fiveStarEliteShardSummonD(int draws)
+	{	
+		fiveStarEliteL = 8;
+		
+		double eliteListD[] = getRates();
+		
+		double upperRates = 30;
+		eliteListD[findIndex("Mihm", 5)] = upperRates;
+		eliteListD[findIndex("Amuvor", 5)] = upperRates;
+
+		int index = 0;
+			
+		for(int i = 0; i < draws; i++)
+		{
+			index = distribution(eliteListD);
+			printWithColor(index);
+		}
+		resetRates();
+	}
+	
 	
 	public void compassOfTranscendedFate(int draws, String hero, String heroLD)
 	{

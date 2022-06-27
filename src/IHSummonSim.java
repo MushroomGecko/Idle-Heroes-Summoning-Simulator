@@ -20,12 +20,13 @@ public class IHSummonSim {
 			{
 				options();
 				validate = getInput(scan);
+				int upperInput = 7;
 				
 				if(validate == -1 || validate == -2)
 				{
 					System.out.println("Please enter in a number");
 				}
-				else if(validate >= 1 && validate <= 6)
+				else if(validate >= 1 && validate <= upperInput)
 				{
 					if(validate == 1)
 					{
@@ -49,10 +50,14 @@ public class IHSummonSim {
 					}
 					else if(validate == 6)
 					{
+						shardSummon(scan, mySum);
+					}
+					else if(validate == upperInput)
+					{
 						compassOfTranscendence(scan, mySum);
 					}
 				}
-				else if(validate < 0 || validate > 6)
+				else if(validate < 0 || validate > upperInput)
 				{
 					System.out.println("Number out of range");
 				}
@@ -69,7 +74,8 @@ public class IHSummonSim {
 		System.out.println("3. Heroic Summon");
 		System.out.println("4. Event Heroic Summon (Mockman)");
 		System.out.println("5. Prophet Tree");
-		System.out.println("6. Compass of Transcended");
+		System.out.println("6. Shard Summon");
+		System.out.println("7. Compass of Transcended");
 		System.out.println("0. Exit");
 	}
 	
@@ -348,6 +354,508 @@ public class IHSummonSim {
 				}
 			}
 			else if(validate < 0 || validate > 5)
+			{
+				System.out.println("Number out of range");
+			}
+		}
+	}
+	
+	public static void shardSummon(Scanner scan, HeroSummon mySum)
+	{
+		int validate = 1;
+		while(validate != 0)
+		{
+			System.out.println("What tree branch would you like to summon from?");
+			System.out.println("1. Three Star Shards");
+			
+			System.out.println();
+			System.out.println("2. Four Star Shards");
+			System.out.println("3. Four Star Shards Forest");
+			System.out.println("4. Four Star Shards Abyss");
+			System.out.println("5. Four Star Shards Fortress");
+			System.out.println("6. Four Star Shards Shadow");
+			System.out.println("7. Four Star Shards Light");
+			System.out.println("8. Four Star Shards Dark");
+			
+			System.out.println();
+			System.out.println("9. Five Star Shards");
+			System.out.println("10. Five Star Shards Forest");
+			System.out.println("11. Five Star Shards Abyss");
+			System.out.println("12. Five Star Shards Fortress");
+			System.out.println("13. Five Star Shards Shadow");
+			System.out.println("14. Five Star Shards Light");
+			System.out.println("15. Five Star Shards Dark");
+			
+			System.out.println();
+			System.out.println("16. Elite Five Star Shards");
+			System.out.println("17. Elite Five Star Shards Light");
+			System.out.println("18. Elite Five Star Shards Dark");
+			
+			System.out.println();
+			System.out.println("0. Exit");
+			
+			validate = getInput(scan);
+			
+			int limit = 18;
+			if(validate == -1 || validate == -2)
+			{
+				System.out.println("Please enter in a number");
+			}
+			else if(validate >= 1 && validate <= limit)
+			{
+				if(validate == 1)
+				{
+					System.out.println("How many three star shard summons?");
+					
+					int num = 1;
+					int prevNum = 10;
+					
+					while(num != 0)
+					{
+						num = getInput(scan);
+						if(num == -1)
+						{
+							mySum.threeStarShardSummon(prevNum);
+						}
+						else if(num == -2  || num < 0)
+						{
+							System.out.println("Please enter in a valid number");
+						}
+						else if(num != 0)
+						{
+							mySum.threeStarShardSummon(num);
+							prevNum = num;
+						}
+					}
+				}
+				else if(validate == 2)
+				{
+					System.out.println("How many four star shard summons?");
+					
+					int num = 1;
+					int prevNum = 10;
+					
+					while(num != 0)
+					{
+						num = getInput(scan);
+						if(num == -1)
+						{
+							mySum.fourStarShardSummon(prevNum);
+						}
+						else if(num == -2  || num < 0)
+						{
+							System.out.println("Please enter in a valid number");
+						}
+						else if(num != 0)
+						{
+							mySum.fourStarShardSummon(num);
+							prevNum = num;
+						}
+					}
+				}
+				else if(validate == 3)
+				{
+					System.out.println("How many forest four star shard summons?");
+					
+					int num = 1;
+					int prevNum = 10;
+					
+					while(num != 0)
+					{
+						num = getInput(scan);
+						if(num == -1)
+						{
+							mySum.fourStarShardSummonFst(prevNum);
+						}
+						else if(num == -2  || num < 0)
+						{
+							System.out.println("Please enter in a valid number");
+						}
+						else if(num != 0)
+						{
+							mySum.fourStarShardSummonFst(num);
+							prevNum = num;
+						}
+					}
+				}
+				else if(validate == 4)
+				{
+					System.out.println("How many abyss four star shard summons?");
+					
+					int num = 1;
+					int prevNum = 10;
+					
+					while(num != 0)
+					{
+						num = getInput(scan);
+						if(num == -1)
+						{
+							mySum.fourStarShardSummonAby(prevNum);
+						}
+						else if(num == -2  || num < 0)
+						{
+							System.out.println("Please enter in a valid number");
+						}
+						else if(num != 0)
+						{
+							mySum.fourStarShardSummonAby(num);
+							prevNum = num;
+						}
+					}
+				}
+				else if(validate == 5)
+				{
+					System.out.println("How many fortress four star shard summons?");
+					
+					int num = 1;
+					int prevNum = 10;
+					
+					while(num != 0)
+					{
+						num = getInput(scan);
+						if(num == -1)
+						{
+							mySum.fourStarShardSummonFrt(prevNum);
+						}
+						else if(num == -2  || num < 0)
+						{
+							System.out.println("Please enter in a valid number");
+						}
+						else if(num != 0)
+						{
+							mySum.fourStarShardSummonFrt(num);
+							prevNum = num;
+						}
+					}
+				}
+				else if(validate == 6)
+				{
+					System.out.println("How many shadow four star shard summons?");
+					
+					int num = 1;
+					int prevNum = 10;
+					
+					while(num != 0)
+					{
+						num = getInput(scan);
+						if(num == -1)
+						{
+							mySum.fourStarShardSummonShd(prevNum);
+						}
+						else if(num == -2  || num < 0)
+						{
+							System.out.println("Please enter in a valid number");
+						}
+						else if(num != 0)
+						{
+							mySum.fourStarShardSummonShd(num);
+							prevNum = num;
+						}
+					}
+				}
+				else if(validate == 7)
+				{
+					System.out.println("How many light four star shard summons?");
+					
+					int num = 1;
+					int prevNum = 10;
+					
+					while(num != 0)
+					{
+						num = getInput(scan);
+						if(num == -1)
+						{
+							mySum.fourStarShardSummonL(prevNum);
+						}
+						else if(num == -2  || num < 0)
+						{
+							System.out.println("Please enter in a valid number");
+						}
+						else if(num != 0)
+						{
+							mySum.fourStarShardSummonL(num);
+							prevNum = num;
+						}
+					}
+				}
+				else if(validate == 8)
+				{
+					System.out.println("How many dark four star shard summons?");
+					
+					int num = 1;
+					int prevNum = 10;
+					
+					while(num != 0)
+					{
+						num = getInput(scan);
+						if(num == -1)
+						{
+							mySum.fourStarShardSummonD(prevNum);
+						}
+						else if(num == -2  || num < 0)
+						{
+							System.out.println("Please enter in a valid number");
+						}
+						else if(num != 0)
+						{
+							mySum.fourStarShardSummonD(num);
+							prevNum = num;
+						}
+					}
+				}
+				else if(validate == 9)
+				{
+					System.out.println("How many five star shard summons?");
+					
+					int num = 1;
+					int prevNum = 10;
+					
+					while(num != 0)
+					{
+						num = getInput(scan);
+						if(num == -1)
+						{
+							mySum.fiveStarShardSummon(prevNum);
+						}
+						else if(num == -2  || num < 0)
+						{
+							System.out.println("Please enter in a valid number");
+						}
+						else if(num != 0)
+						{
+							mySum.fiveStarShardSummon(num);
+							prevNum = num;
+						}
+					}
+				}
+				else if(validate == 10)
+				{
+					System.out.println("How many forest five star shard summons?");
+					
+					int num = 1;
+					int prevNum = 10;
+					
+					while(num != 0)
+					{
+						num = getInput(scan);
+						if(num == -1)
+						{
+							mySum.fiveStarShardSummonFst(prevNum);
+						}
+						else if(num == -2  || num < 0)
+						{
+							System.out.println("Please enter in a valid number");
+						}
+						else if(num != 0)
+						{
+							mySum.fiveStarShardSummonFst(num);
+							prevNum = num;
+						}
+					}
+				}
+				else if(validate == 11)
+				{
+					System.out.println("How many abyss five star shard summons?");
+					
+					int num = 1;
+					int prevNum = 10;
+					
+					while(num != 0)
+					{
+						num = getInput(scan);
+						if(num == -1)
+						{
+							mySum.fiveStarShardSummonAby(prevNum);
+						}
+						else if(num == -2  || num < 0)
+						{
+							System.out.println("Please enter in a valid number");
+						}
+						else if(num != 0)
+						{
+							mySum.fiveStarShardSummonAby(num);
+							prevNum = num;
+						}
+					}
+				}
+				else if(validate == 12)
+				{
+					System.out.println("How many fortress five star shard summons?");
+					
+					int num = 1;
+					int prevNum = 10;
+					
+					while(num != 0)
+					{
+						num = getInput(scan);
+						if(num == -1)
+						{
+							mySum.fiveStarShardSummonFrt(prevNum);
+						}
+						else if(num == -2  || num < 0)
+						{
+							System.out.println("Please enter in a valid number");
+						}
+						else if(num != 0)
+						{
+							mySum.fiveStarShardSummonFrt(num);
+							prevNum = num;
+						}
+					}
+				}
+				else if(validate == 13)
+				{
+					System.out.println("How many shadow five star shard summons?");
+					
+					int num = 1;
+					int prevNum = 10;
+					
+					while(num != 0)
+					{
+						num = getInput(scan);
+						if(num == -1)
+						{
+							mySum.fiveStarShardSummonShd(prevNum);
+						}
+						else if(num == -2  || num < 0)
+						{
+							System.out.println("Please enter in a valid number");
+						}
+						else if(num != 0)
+						{
+							mySum.fiveStarShardSummonShd(num);
+							prevNum = num;
+						}
+					}
+				}
+				else if(validate == 14)
+				{
+					System.out.println("How many light five star shard summons?");
+					
+					int num = 1;
+					int prevNum = 10;
+					
+					while(num != 0)
+					{
+						num = getInput(scan);
+						if(num == -1)
+						{
+							mySum.fiveStarShardSummonL(prevNum);
+						}
+						else if(num == -2  || num < 0)
+						{
+							System.out.println("Please enter in a valid number");
+						}
+						else if(num != 0)
+						{
+							mySum.fiveStarShardSummonL(num);
+							prevNum = num;
+						}
+					}
+				}
+				else if(validate == 15)
+				{
+					System.out.println("How many dark five star shard summons?");
+					
+					int num = 1;
+					int prevNum = 10;
+					
+					while(num != 0)
+					{
+						num = getInput(scan);
+						if(num == -1)
+						{
+							mySum.fiveStarShardSummonD(prevNum);
+						}
+						else if(num == -2  || num < 0)
+						{
+							System.out.println("Please enter in a valid number");
+						}
+						else if(num != 0)
+						{
+							mySum.fiveStarShardSummonD(num);
+							prevNum = num;
+						}
+					}
+				}
+				else if(validate == 16)
+				{
+					System.out.println("How many elite five star shard summons?");
+					
+					int num = 1;
+					int prevNum = 10;
+					
+					while(num != 0)
+					{
+						num = getInput(scan);
+						if(num == -1)
+						{
+							mySum.fiveStarEliteShardSummon(prevNum);
+						}
+						else if(num == -2  || num < 0)
+						{
+							System.out.println("Please enter in a valid number");
+						}
+						else if(num != 0)
+						{
+							mySum.fiveStarEliteShardSummon(num);
+							prevNum = num;
+						}
+					}
+				}
+				else if(validate == 17)
+				{
+					System.out.println("How many elite light five star shard summons?");
+					
+					int num = 1;
+					int prevNum = 10;
+					
+					while(num != 0)
+					{
+						num = getInput(scan);
+						if(num == -1)
+						{
+							mySum.fiveStarEliteShardSummonL(prevNum);
+						}
+						else if(num == -2  || num < 0)
+						{
+							System.out.println("Please enter in a valid number");
+						}
+						else if(num != 0)
+						{
+							mySum.fiveStarEliteShardSummonL(num);
+							prevNum = num;
+						}
+					}
+				}
+				else if(validate == limit)
+				{
+					System.out.println("How many elite dark five star shard summons?");
+					
+					int num = 1;
+					int prevNum = 10;
+					
+					while(num != 0)
+					{
+						num = getInput(scan);
+						if(num == -1)
+						{
+							mySum.fiveStarEliteShardSummonD(prevNum);
+						}
+						else if(num == -2  || num < 0)
+						{
+							System.out.println("Please enter in a valid number");
+						}
+						else if(num != 0)
+						{
+							mySum.fiveStarEliteShardSummonD(num);
+							prevNum = num;
+						}
+					}
+				}
+				
+			}
+			else if(validate < 0 || validate > limit)
 			{
 				System.out.println("Number out of range");
 			}
