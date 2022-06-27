@@ -8,7 +8,7 @@ If you encounter any bugs, errors, glitches, or any simulator breaking occurrenc
 I would like to thank you guys so much for your support on this project! You guys, the Idle Heroes community, are the best out there and I hope this simulator makes you guys as happy as you guys and your support make me! So far I have received a lot of feedback and suggestions, lots that I have implemented in this first beta, and I can not wait to continue updating this simulator to continue bringing you guys more content and things to try out!
 
 # Info
-Version: Beta 3.0
+Version: Beta 3.1
 
 Creator: u/MushroomGecko on Reddit
 
@@ -19,13 +19,7 @@ Licence: GNU General Public License v3.0
 # Notice
 Idle Heroes is a free to play idle game on iOS and Android made by DHGames. All hero names, artifact names, skin names, and draw rates used in this simulator originate from Idle Heroes. This simulator is up to date with Idle Heroes version 1.28.96 on Android and version 1.36.43 on iOS.
 
-# Updates from Beta 2.2
-I am rewriting this project from the ground up to allow for a faster and more efficient update process with each update. I abandoned the project a while back because of how difficult it was to keep up and change summon rates for every update. The changes I made here should allow for a MUCH easier update process. Because I am rewriting this from the ground up, I need to re-add everything previously in the project and it is currently missing some features. This version is temporarily missing a bag to keep track of your summons, shard summons, artifact summons, and skin summons. However, have no fear! I have added a few things for you this update.
+# Updates from Beta 3.0
+I am rewriting this project from the ground up to allow for a faster and more efficient update process with each update. I abandoned the project a while back because of how difficult it was to keep up and change summon rates for every update. The changes I made here should allow for a MUCH easier update process. Because I am rewriting this from the ground up, I need to re-add everything previously in the project and it is currently missing some features. This version is temporarily missing a bag to keep track of your summons, artifact summons, and skin summons. However, have no fear! I have added a few things for you this update.
 
-> Added Flora, inosuke, Morax, Eloise, Fiona, Gloria, Andrea, Phorcys, Tussilago, Waldeck, Onkirimaru, Saja, Xiahou, Annabelle, Natasha, Eos, Holmes Young, Freya, and Mockman to the hero pool.
-
-> Added Basic Summoning
-
-> Added Friendship Summoning
-
-> Added Compass of Transcendence Summoning (both Fate and Guidance)
+> Added 3, 4, and 5 star shard (and elite 5 star shard) summon simulation
